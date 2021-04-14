@@ -1,0 +1,43 @@
+https://www.w3schools.com/ - div
+html - <div></div> - css: body {background url('../pics/bg-body.fig')}
+css: div{ backgorund-color: white;
+          width 400px;
+          padding 20px;
+          } ------> box-sizing : content-box (padding rámegy), border-box (padding benne marad)
+* { box-sizing: border-box;}
+css: div{ backgorund-color: white;
+          width 400px;
+          padding 20px; (felül jobb alul bal)
+          border-width: 10px;
+          border-style: solid;
+          border-color: green;
+          } -----------> w3c border stílusokat megnézni
+          border-left: 10px solid green;
+          border-right: 10px dotted red;
+          margin:20px (felül jobb alul bal) - auto paraméter középre igazít
+          max-width: 800 px (a reszponzivitás miatt)
+          min-width: 400 px;
+html - div class="header-image ";
+css:.box a div helyett, hogy osztály szelekció legyen
+.header-image{ background-image: url('../pics/image1.jpg'); } - nem látszik, mert nincs magassága a doboznak
+                height: 200px;
+box-ból kivenni a paddinget.
+html - új div csak a szövegnek class="box-content"
+html - h1 tag a címnek
+Css - .box h2 { margin: 0} - így a box-on belüli h2-ről leveszi a margint
+html - <p class="details"><a href=""> Tartalom </a></p>
+css  .box-content .details a{ background: #feb125 color:black;} -- sárga hátterű fekete link -- dipslay inline típusú elem!! (ráfolyik a környező tartalopmra)
+css .box-content .details a { display: block;} margin csak a blokkon, vagy inline blokkon van. 
+(inline-blokk jellmező, hogy margin-padding hat rá, de nem tölti ki a helyet teljesen)
+text-decoration: none; (eltünteti az aláhúzást a linkről)
+box-shadow: 0 0 30px rgba(0,0,0,.7)
+
+
+
+
+
+          
+          
+         
+
+          
