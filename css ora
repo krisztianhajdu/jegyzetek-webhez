@@ -1,0 +1,7 @@
+Hozzunk létre egy munkamappát, abban index.html fájlt, css, és pics mappákat. style.css-t, classroomból a képeket a pics mappába. 
+Alakítsuk ki egy alap html fájl szerkezetét
+hivatkozzuk be a css fájlt
+legyen egy kék hátterű fájlunk, a háttérkép ismétlődjön, és legyen fixált
+body {background-image: url('../pics/hatter.png'); background-size: cover; background-repeat: no-repeat; background-position: center center; background-attachment:fixed;}
+Betűk színe legyen fehér, mérete 30 pixel, 
+body {color: white; font-size: 20; }
