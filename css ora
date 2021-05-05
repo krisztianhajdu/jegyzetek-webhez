@@ -3,5 +3,55 @@ Alakítsuk ki egy alap html fájl szerkezetét
 hivatkozzuk be a css fájlt
 legyen egy kék hátterű fájlunk, a háttérkép ismétlődjön, és legyen fixált
 body {background-image: url('../pics/hatter.png'); background-size: cover; background-repeat: no-repeat; background-position: center center; background-attachment:fixed;}
-Betűk színe legyen burlywood, mérete 30 pixel, legyen dőlt, 
-body {color: white; font-size: 20px; font-style:italic,  }
+Betűk színe legyen burlywood, mérete 25 pixel, legyen dőlt, Times 
+body {color: white; font-size: 20px; font-style:italic;}
+1 bekezdést tegyük egy dobozba, és formázzuk, háttere legyen zöld, szélessége minimum 400 px, padding 15px, border 20 px, darkred, dotted.
+A margók legyenek automatikusak. Mit eremdényez ez a doboz helyzeténél? (középen marad, reszponzív)
+állítsuk be, hogy a border ne kifelé növelje a doboz méretét (box-sizing:border-box) Hogyan állítjuk be, hogy minden doboz ilyen legyen a weblapon? (csillag szelektorba írni)
+div html
+css-div {
+    background-color:green;
+    min-width: 400px;
+    box-sizing: border-box;
+    padding: 15px;
+    border-width: 20px;
+    border-style: dotted;
+    border-color: darkred; }
+Nevezzük meg a dobozunkat, szelektáljuk ki. Legyen header a neve. 
+rakjunk ebbe a dobozba még egy dobozt, legyen a neve head-image. 
+állítsunk be hátteret ennek a head-image doboznak, legyen a hatter.png. 
+Miért nem látszik?  div.head-image div.header-image {background-image: url('../pics/hatter.png'); 
+Legyen 200 px magas! height: 200px;
+legyen egy tartalom nevű doboz is, amelyikben legyen a padding 20px, míg a kép dobozán ne legyen.
+készítsünk egy kettes szintű címsort "fejlec" néven, amelyen fent és lent 10 px margó legyen. .
+
+}body {
+    background-image: url('../pics/hatter2.png');
+    background-color: blue;
+    background-attachment: fixed;
+    color: burlywood;
+    font-style: italic;
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+}
+div.header {
+    background-color: darkcyan;
+    min-width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-width: 15px;
+    border-style: groove;
+    border-color: darkred;
+}
+div.header-image {
+    background-image: url('../pics/hatter.png');
+    height: 200px;
+
+}
+div.tartalom {
+    padding: 20px;
+}
+div.header h2.fejlec {
+    margin: 10px 0px;
+}
+
